@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="request_test/requestTest.jsp">request</a>
-	<a href="attrForm.jsp">attr</a>
+	<form action="attrTest1.jsp" method="post">
+		아이디 : <input type="text" name="id" />
+		<button>확인</button>
+	</form>
 </body>
 </html>
