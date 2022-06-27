@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DBCP : DataBase Connection Pool -->
+<Context>
+	<Resource 
+		name="java/MySqlDB"
+		auth="container"
+		type="javax.sql.DataSource"
+		factoty="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/bigdata"
+		username="bigdata"
+		password="12345"
+		initialSize="10"
+		maxActive="200"
+		minIdle="10"
+		maxWait="60000" />
+		<!-- 
+			initialSize : 커넥션풀 생성 시 최초에 생성할 커넥션 개수 (Default : 0)
+			maxActive : 동시에 사용할 수 있는 최대 커넥션 수 (Default : 8)
+			minIdle : 최소한으로 유지될 커넥션 수 (Default : 0)
+			maxWait : 할당받을 커넥션이 없을 때 최대 대기 시간(Thread block) (1/1000초)
+		-->
+</Context>
